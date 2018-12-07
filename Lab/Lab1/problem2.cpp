@@ -119,7 +119,7 @@ void destroy_linklist(linklist *phead){
 }
 
 int main(int argc, char const *argv[]) {
-        freopen("input.txt","r",stdin);
+        //freopen("input.txt","r",stdin);
 
         int n;
         cin>>n;

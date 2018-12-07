@@ -106,7 +106,7 @@ void destroy_linklist(linklist *phead){
 }
 
 int main(int argc, char const *argv[]) {
-        freopen("input.txt","r",stdin);
+        //freopen("input.txt","r",stdin);
 
         int num[2333];
         int n=0;

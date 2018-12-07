@@ -137,11 +137,11 @@ void print_tree(Node *root,int space){
 
 bool is_complete_BTtree(Node *root){
         queue<Node*> tmp;
-        tmp.push(tmp);
+        tmp.push(root);
         while(!tmp.empty()) {
                 Node *cur=tmp.front();
                 tmp.pop();
-                if(tmp==NULL) break;
+                if(cur==NULL) break;
                 else{
                         tmp.push(cur->left);
                         tmp.push(cur->right);
@@ -163,7 +163,7 @@ void destroy(Node *root){
 }
 
 int main() {
-        freopen("input.txt","r",stdin);
+        //freopen("input.txt","r",stdin);
 
         Node *root=(Node*)malloc(sizeof(Node));
         string val,par,pos;
@@ -172,10 +172,33 @@ int main() {
                 cin>>par>>pos;
                 if(par=="-1"&&pos=="-1") root=creat_node(val);
                 else add_node(val,par,pos);
-                cout<<val<<par<<pos<<endl;
+                //cout<<val<<par<<pos<<endl;
         }
 
+        cout<<"Binary Tree:"<<endl;
         print_tree(root, 0);
+        cout<<"\n"<<endl;
+
+        cout<<"Pre Order"<<endl;
+        pre_order_1(root);
+        cout<<endl;
+        pre_order_2(root);
+        cout<<"\n"<<endl;
+
+        cout<<"Mid Order"<<endl;
+        mid_order_1(root);
+        cout<<endl;
+        mid_order_2(root);
+        cout<<"\n"<<endl;
+
+        cout<<"Back Order"<<endl;
+        back_order_1(root);
+        cout<<endl;
+        back_order_2(root);
+        cout<<"\n"<<endl;
+
+        if(is_complete_BTtree(root)) cout<<"This is a Complete Binary Tree"<<endl;
+        else cout<<"This is not a Complete Binary Tree"<<endl;
 
         destroy(root);
         return 0;

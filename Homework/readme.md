@@ -1,3 +1,3 @@
 ### Homework
 
-[Josephus.py](./Homework/Josephus.py) 约瑟夫环
+[Josephus.py](./Josephus.py) 约瑟夫环
