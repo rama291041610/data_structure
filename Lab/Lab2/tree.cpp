@@ -163,7 +163,7 @@ void destroy(Node *root){
 }
 
 int main() {
-        //freopen("input.txt","r",stdin);
+        freopen("ex2_tree1.txt","r",stdin);
 
         Node *root=(Node*)malloc(sizeof(Node));
         string val,par,pos;
@@ -196,6 +196,10 @@ int main() {
         cout<<endl;
         back_order_2(root);
         cout<<"\n"<<endl;
+
+        cout<<"Lever Order"<<endl;
+        lever_order(root);
+        cout<<endl;
 
         if(is_complete_BTtree(root)) cout<<"This is a Complete Binary Tree"<<endl;
         else cout<<"This is not a Complete Binary Tree"<<endl;

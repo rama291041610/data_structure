@@ -9,6 +9,10 @@
 
 [二叉树存储结构的建立与遍历](./Lab/Lab2)
 
+#### Lab3
+
+[Graph](./Lab/Lab3)
+
 ### Homework
 
 [Josephus.py](./Homework/Josephus.py) 约瑟夫环
