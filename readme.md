@@ -13,6 +13,10 @@
 
 [Graph](./Lab/Lab3)
 
+#### Lab4
+
+[查找结构](./Lab/Lab4)
+
 ### Homework
 
 [Josephus.py](./Homework/Josephus.py) 约瑟夫环
