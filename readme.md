@@ -17,6 +17,10 @@
 
 [查找结构](./Lab/Lab4)
 
+#### Lab5
+
+[排序算法](./Lab/Lab5)
+
 ### Homework
 
 [Josephus.py](./Homework/Josephus.py) 约瑟夫环
