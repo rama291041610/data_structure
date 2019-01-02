@@ -5,7 +5,7 @@ import random
 def buddle_sort(data):
     for i in range(len(data)):
         flag = 0
-        for j in range(len(data) - 1):
+        for j in range(len(data) - i - 1):
             if data[j + 1] < data[j]:
                 data[j + 1], data[j] = data[j], data[j + 1]
                 flag = 1

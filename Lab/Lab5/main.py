@@ -59,7 +59,7 @@ if __name__ == "__main__":
                 time_tmp = {'quick_sort': [], 'buddle_sort': []}
                 for i in range(10):
                     data = generate_data(n, method)
-                    data_cp = data
+                    data_cp = list(data)
                     start_time = time.clock()
                     buddle_sort(data)
                     end_time = time.clock()
